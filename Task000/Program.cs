@@ -1,5 +1,5 @@
 ﻿//Console.WriteLine("введите число клвадрат которого необходимо вычислить");
-int x = 2;
+int x = 4;
 x = x*x;
-Console.WriteLine("Квадратом числа 2 будет");
+Console.WriteLine("Квадратом числа 4 будет");
 Console.WriteLine(x);
