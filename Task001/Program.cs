@@ -6,9 +6,9 @@ int b = 5;
 a = a*a;
 if (a==b)
 {
-    Console.WriteLine("Число является квадратом второго");
+    Console.WriteLine("Число 5 является квадратом 4");
 }
 else
 {
-    Console.WriteLine("Число не является квадратом второго");
+    Console.WriteLine("Число 5 не является квадратом 4");
 }
