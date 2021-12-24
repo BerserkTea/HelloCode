@@ -1,8 +1,14 @@
 ﻿// Показать вторую цифру трёхзначного числа
 Console.WriteLine("Hello, World!");
 
-var x = 548;
+var x = 316564;
 
-string y = Convert.ToString(x);
-
-Console.WriteLine(y[1]);
+string stringNumber = Convert.ToString(x);
+if (stringNumber.Length>3)
+{
+    Console.WriteLine("длинна превышена");
+}
+else
+{
+    Console.WriteLine(stringNumber[1]);
+}

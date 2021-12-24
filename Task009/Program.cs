@@ -1,8 +1,15 @@
 ﻿// Показать последнюю цифру трёхзначного числа
 Console.WriteLine("Hello, World!");
 
-var x = 435;
+var x = 431;
 
 string y = Convert.ToString(x);
 
-Console.WriteLine(y[2]);
+if (y.Length>3)
+{
+    Console.WriteLine("длинна превышена");
+}
+else
+{
+    Console.WriteLine(y[2]);
+}
