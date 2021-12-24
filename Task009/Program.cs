@@ -1,7 +1,7 @@
 ﻿// Показать последнюю цифру трёхзначного числа
 Console.WriteLine("Hello, World!");
 
-var x = 4935;
+var x = 435;
 
 string y = Convert.ToString(x);
 
