@@ -7,18 +7,33 @@
 //            Console.WriteLine(ch[i]);
 //         }
 
-int a = 6534;
-string chislo = Convert.ToString(a);
-char[] numbarr = new char[chislo.Length];
-for (int index = 0; index < chislo.Length; index++)
+// int a = 6534;
+// string chislo = Convert.ToString(a);
+// char[] numbarr = new char[chislo.Length];
+// for (int index = 0; index < chislo.Length; index++)
+// {
+//     numbarr[index] = chislo[index];
+// }
+// if (numbarr[2] != 0)
+// {
+//     Console.WriteLine(numbarr[2]);    // как уточнить существует ли эллемент массива?
+// }
+// else
+// {
+//     Console.WriteLine("А нет её, всё-всё нет её.");
+// }
+
+// Найти третью цифру числа или сообщить, что её нет
+
+Console.WriteLine("Введите число");
+int a = Convert.ToInt32(Console.ReadLine());
+
+if (100 > a )
 {
-    numbarr[index] = chislo[index];
-}
-if (numbarr[2] != 0)
-{
-    Console.WriteLine(numbarr[2]);    // как уточнить существует ли эллемент массива?
+    Console.WriteLine("ошибка"); 
 }
 else
 {
-    Console.WriteLine("А нет её, всё-всё нет её.");
+    string y = Convert.ToString(a);
+    Console.WriteLine(y[2]);
 }

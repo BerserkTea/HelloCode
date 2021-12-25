@@ -1,14 +1,28 @@
-﻿// 5. Написать программу вычисления значения функции y = f(a)
+﻿// 5. Написать программу вычисления значения функции y = f(a) = (1+1/a)^a
+// 
 //double x = 5.4;
 //double y = 9999;
 //y = x*x*(x + x);
 //Console.WriteLine(y);
 
-double method1 (double a)
+// double method1 (double a)
+// {
+//     double result = a*a+1;
+//     return result;
+// }
+// double v = method1(9);
+// Console.WriteLine("Функция y = f(a) при а = 9 равна ");
+// Console.WriteLine(v);
+
+Console.WriteLine("ВВедите a");
+double a = Convert.ToDouble(Console.ReadLine());
+double y = 0;
+if (a==0)
 {
-    double result = a*a+1;
-    return result;
+   Console.WriteLine("Введено некорректное число"); 
 }
-double v = method1(9);
-Console.WriteLine("Функция y = f(a) при а = 9 равна ");
-Console.WriteLine(v);
+else
+{
+    double y = Math.Pow((1+1/a),a);
+    Console.WriteLine(y);
+}
