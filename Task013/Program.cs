@@ -12,18 +12,21 @@
 //     Console.Write("Число b не кратно числу a, и остаток составляет ");
 //     Console.WriteLine(x);
 // }
-// Выяснить, кратно ли число заданному, если нет, вывести остаток.
 
-Console.WriteLine("Введите число1");
-int N = Convert.ToInt32(Console.ReadLine());
+//Выяснить, кратно ли число заданному, если нет, вывести остаток.
+Console.WriteLine("Выяснить, кратно ли число заданному (900), если нет, вывести остаток.");
+// Console.WriteLine("Введите число1");
+// int N = Convert.ToInt32(Console.ReadLine());
+int N = 900;
 Console.WriteLine("Введите число2");
 int A = Convert.ToInt32(Console.ReadLine());
 int result = N % A;
 if (result != 0)
 {
+    Console.WriteLine("Число не кратно и остаток равен");
     Console.WriteLine(result);
 }
 else
 {
-    Console.WriteLine("Кратно");
+    Console.WriteLine("число кратно");
 }
