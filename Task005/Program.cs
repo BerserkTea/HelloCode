@@ -14,9 +14,9 @@
 // Console.WriteLine("Функция y = f(a) при а = 9 равна ");
 // Console.WriteLine(v);
 
-Console.WriteLine("ВВедите a");
+Console.WriteLine("Введите a");
 double a = Convert.ToDouble(Console.ReadLine());
-double y = 0;
+
 if (a==0)
 {
    Console.WriteLine("Введено некорректное число"); 
@@ -24,5 +24,6 @@ if (a==0)
 else
 {
     double y = Math.Pow((1+1/a),a);
+    Console.Write(" y = (1+1/a)^a, значение функции будет равно ");
     Console.WriteLine(y);
 }
