@@ -50,18 +50,26 @@
 // Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
 
 //int number = new Random().Next(10, 100);
-System.Console.WriteLine("Введите число");
+System.Console.WriteLine("Введите число от 10 до 99 ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 //Console.WriteLine(number);
-
-int a = number % 10;
-int b = number/ 10;
-if (a > b)
+if (9<number && number<100)
 {
+    int a = number % 10;
+    int b = number/ 10;
+    if (a > b)
+    {
+    Console.Write("Наибольшей цифрой числа является ");
     Console.WriteLine(a);
+    }
+    else
+    {
+    Console.Write("Наибольшей цифрой числа является ");
+    Console.WriteLine(b);
+    }
 }
 else
 {
-    Console.WriteLine(b);
+    Console.WriteLine("Введено некоректное значение");
 }
