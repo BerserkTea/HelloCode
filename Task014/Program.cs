@@ -34,6 +34,6 @@ if (100 > a )
 }
 else
 {
-    string y = Convert.ToString(a);
-    Console.WriteLine(y[2]);
+    int y = a%10;
+    Console.WriteLine(y);
 }
