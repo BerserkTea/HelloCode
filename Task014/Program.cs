@@ -28,7 +28,7 @@
 Console.WriteLine("Введите число");
 int a = Convert.ToInt32(Console.ReadLine());
 
-if (99 > a)
+if (100 > a)
 {
     Console.WriteLine("ошибка 3 цифры нет");
 }
