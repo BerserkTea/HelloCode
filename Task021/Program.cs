@@ -51,10 +51,10 @@
 // }
 
 // 2ой способ попроще.
-Console.WriteLine("Введите пятизначное число");
-int Numbers = Convert.ToInt32(Console.ReadLine());
-string NumbersString = Convert.ToString(Numbers); // создали переменную типа string из введенных чисел
-Console.WriteLine(NumbersString.Length);
+string NumbersString ="78687";
+Console.WriteLine($"Задано число {NumbersString}");
+//string NumbersString = Convert.ToString(Numbers); // создали переменную типа string из введенных чисел
+//Console.WriteLine(NumbersString.Length);
 int howManyCounts = NumbersString.Length / 2;   //Переменная что бы узнать сколько требуется раз провести расчеты(сравнения)
 if (NumbersString.Length != 5)
 {
