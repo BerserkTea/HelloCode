@@ -2,17 +2,17 @@
 Console.WriteLine("Ведите десятичное число для преобразования его в двоичное");
 int Number = Convert.ToInt32(Console.ReadLine());
 
-void ConvertToBinary(int decimalNumber)
+int[] ConvertToBinary(int decimalnumber)
 {
     int counter = 0;
-    int arrLenght = decimalNumber;
-    while (arrLenght >= 1)
+    int howLongArr = decimalnumber;
+    while (howLongArr >= 1)
     {
-        arrLenght = arrLenght / 2;
+        howLongArr = howLongArr / 2;
         counter++;
     }
     int[] arrayBinaryNumber = new int[counter];
-    int dividend = decimalNumber;
+    int dividend = decimalnumber;
     int fromBackCounter = arrayBinaryNumber.Length - 1;
     while (dividend >= 1)
     {
@@ -20,12 +20,22 @@ void ConvertToBinary(int decimalNumber)
         dividend = dividend / 2;
         --fromBackCounter;
     }
-    //arrayBinaryNumber[0]=dividend;
-   
-    for (int i = 0; i < arrayBinaryNumber.Length; i++)
-    {
-        Console.Write(arrayBinaryNumber[i]);
-    }
+return arrayBinaryNumber;
 }
-ConvertToBinary(Number);
+void PrintArray (int[] arraytoprint)
+{
+    for (int i = 0; i < arraytoprint.Length; i++)
+    {
+        Console.Write(arraytoprint[i]);
+    }
+Console.WriteLine();
+}
+// ConvertToBinary(Number);
+PrintArray(ConvertToBinary(Number));
 
+
+// Console.WriteLine("Введите число: "); 
+// int number = Convert.ToInt32(Console.ReadLine()); 
+ 
+// string binary = Convert.ToString(number, 2); 
+// Console.WriteLine($"Перевод десятичного числа {number} в двоичное {binary}");
