@@ -15,7 +15,7 @@ void FillTwoDimensiounalArray(int[,] sometwodimensionalarray)
         }
     }
 }
-void PrintTwoDimensionalArray (int[,] anothertwodimensionalarray)
+void PrintTwoDimensionalArray(int[,] anothertwodimensionalarray)
 {
     for (int i = 0; i < anothertwodimensionalarray.GetLength(0); i++)
     {
@@ -23,19 +23,19 @@ void PrintTwoDimensionalArray (int[,] anothertwodimensionalarray)
         {
             Console.Write($"{anothertwodimensionalarray[i, j]} ");
         }
-    Console.WriteLine();
+        Console.WriteLine();
     }
 }
 int[,] array = new int[strings, columns];
-void ReplaceEvenNumbers (int[,] onemoretwodimensionalarray)
+void ReplaceEvenNumbers(int[,] onemoretwodimensionalarray)
 {
     for (int i = 0; i < onemoretwodimensionalarray.GetLength(0); i++)
     {
         for (int j = 0; j < onemoretwodimensionalarray.GetLength(1); j++)
         {
-            if (onemoretwodimensionalarray[i,j]%2!=0)
+            if (onemoretwodimensionalarray[i, j] % 2 != 0)
             {
-                onemoretwodimensionalarray[i,j]= -onemoretwodimensionalarray[i,j];
+                onemoretwodimensionalarray[i, j] = -onemoretwodimensionalarray[i, j];
             }
         }
     }
